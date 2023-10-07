@@ -25,10 +25,19 @@ Title: "Eternity - KeyShops"
     Failed: "§cYour money is not enough"
 3:
   Key:
-    Name: "" # Key Name
-    Price: 1000000 # Price key
+    Name: "Phoenix" # Key Name
+    Price: 3000000 # Price key
   Button:
-    Name: "§l§e Key" # Button Name
+    Name: "§l§ePhoenix Key" # Button Name
   Message:
-    Succes: "§aSucces buy a key §eVeteran" # Success Message Buy A Key
+    Succes: "§aSucces buy a key §ePhoenix" # Success Message Buy A Key
+    Failed: "§cYour money is not enough"
+4:
+  Key:
+    Name: "Demon" # Key Name
+    Price: 4000000 # Price key
+  Button:
+    Name: "§l§eDemon Key" # Button Name
+  Message:
+    Succes: "§aSucces buy a key §eDemon" # Success Message Buy A Key
     Failed: "§cYour money is not enough"
