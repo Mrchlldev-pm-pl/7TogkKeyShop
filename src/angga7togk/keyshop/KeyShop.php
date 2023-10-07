@@ -2,7 +2,7 @@
 
 namespace angga7togk\keyshop;
 
-use angga7togk\keyshop\Form\SimpleForm;
+use jojoe77777\FormAPI\SimpleForm;
 use onebone\economyapi\EconomyAPI;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -49,7 +49,7 @@ class KeyShop extends PluginBase
             $money = EconomyAPI::getInstance()->myMoney($player);
             if ($money >= $this->config->get($data)["Key"]["Price"]) {
                 EconomyAPI::getInstance()->reduceMoney($player, $this->config->get($data)["Key"]["Price"]);
-                $this->getServer()->getCommandMap()->dispatch(new ConsoleCommandsender($this->getServer(), $this->getServer()->getLanguage()), "key " . $this->config->get($data)["Key"]["Name"] . " 1 \"" . $player->getName() . "\"");
+                $this->getServer()->getCommandMap()->dispatch(new ConsoleCommandsender($this->getServer(), $this->getServer()->getLanguage()), "mcrates key " . $this->config->get($data)["Key"]["Name"] . " 1 \"" . $player->getName() . "\"");
                 $player->sendMessage(self::prefix.$this->config->get($data)["Message"]["Succes"]);
             } else {
                 $player->sendMessage(self::prefix.$this->config->get($data)["Message"]["Failed"]);
